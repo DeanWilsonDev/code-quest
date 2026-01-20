@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/run_all_quest_tests.dir/runners/run_all_tests.cpp.o -c /Users/deanwilson/development/challenges/quest/runners/run_all_tests.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/runners/run_all_tests.cpp",
+  "output": "CMakeFiles/run_all_quest_tests.dir/runners/run_all_tests.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
+  "command": "/usr/bin/cc  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/umbra_test.dir/src/test_case.c.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_case.c",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_case.c",
+  "output": "_deps/umbra_test-build/CMakeFiles/umbra_test.dir/src/test_case.c.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
+  "command": "/usr/bin/cc  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/umbra_test.dir/src/test_group.c.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_group.c",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_group.c",
+  "output": "_deps/umbra_test-build/CMakeFiles/umbra_test.dir/src/test_group.c.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
+  "command": "/usr/bin/cc  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/umbra_test.dir/src/test_registry.c.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_registry.c",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_registry.c",
+  "output": "_deps/umbra_test-build/CMakeFiles/umbra_test.dir/src/test_registry.c.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
+  "command": "/usr/bin/cc  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/umbra_test.dir/src/test_container.c.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_container.c",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_container.c",
+  "output": "_deps/umbra_test-build/CMakeFiles/umbra_test.dir/src/test_container.c.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
+  "command": "/usr/bin/cc  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/umbra_test.dir/src/test_runner.c.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_runner.c",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_runner.c",
+  "output": "_deps/umbra_test-build/CMakeFiles/umbra_test.dir/src/test_runner.c.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/test_UmbraTest.dir/test/test_main.cpp.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/test/test_main.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/test/test_main.cpp",
+  "output": "_deps/umbra_test-build/CMakeFiles/test_UmbraTest.dir/test/test_main.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/test_UmbraTest.dir/test/example.test.cpp.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/test/example.test.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/test/example.test.cpp",
+  "output": "_deps/umbra_test-build/CMakeFiles/test_UmbraTest.dir/test/example.test.cpp.o"
+}
+]
