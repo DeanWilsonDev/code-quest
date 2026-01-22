@@ -22,14 +22,15 @@ FetchContent_MakeAvailable(umbra_test)
 file(
   GLOB SUBDIRS
   LIST_DIRECTORIES true
-  "${CMAKE_CURRENT_SOURCE_DIR}/quests/")
+  "${CMAKE_CURRENT_SOURCE_DIR}/quests/*")
 
-set(SUBPROJECT_LIBS)
-set(SUBPROJECT_TARGET_SOURCES)
-foreach(DIR ${SUBDIRS})
+set(SUBPROJECT_LIBS "")
+set(SUBPROJECT_TARGET_SOURCES "")
+foreach(DIR IN LISTS SUBDIRS)
   if(IS_DIRECTORY ${DIR})
     get_filename_component(DIR_NAME ${DIR} NAME)
-    # add_subdirectory(${DIR_NAME})
+
+    add_subdirectory("quests/${DIR_NAME}")
     list(APPEND SUBPROJECT_LIBS quest_${DIR_NAME})
     list(APPEND SUBPROJECT_TARGET_SOURCES "$<TARGET_OBJECTS:quest_${DIR_NAME}>")
   endif()

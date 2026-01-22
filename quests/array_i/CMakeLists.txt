@@ -11,7 +11,7 @@ string(TOUPPER ${PROJECT_NAME} PROJECT_NAME_UPPER)
 option(${PROJECT_NAME_UPPER}_BUILD_RUNNER "Build Quest: Array I standalone one"
        ON)
 if(${PROJECT_NAME_UPPER}_BUILD_RUNNER)
-  add_executable(run_${PROJECT_NAME} test_runner.cpp)
+  add_executable(run_${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/test/test_runner.cpp)
   target_link_libraries(run_${PROJECT_NAME} PRIVATE ${PROJECT_NAME} umbra_test)
   target_sources(run_${PROJECT_NAME} PRIVATE $<TARGET_OBJECTS:${PROJECT_NAME}>)
 endif()
