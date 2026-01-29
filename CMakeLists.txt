@@ -26,15 +26,59 @@ file(
 
 set(SUBPROJECT_LIBS "")
 set(SUBPROJECT_TARGET_SOURCES "")
-foreach(DIR IN LISTS SUBDIRS)
-  if(IS_DIRECTORY ${DIR})
-    get_filename_component(DIR_NAME ${DIR} NAME)
 
-    add_subdirectory("quests/${DIR_NAME}")
-    list(APPEND SUBPROJECT_LIBS quest_${DIR_NAME})
-    list(APPEND SUBPROJECT_TARGET_SOURCES "$<TARGET_OBJECTS:quest_${DIR_NAME}>")
-  endif()
-endforeach()
+function(add_subdirectories_recursive parent_dir)
+  file(
+    GLOB children
+    RELATIVE ${parent_dir}
+    ${parent_dir}/*)
+
+  # check for cmake lists in dir
+  foreach(child ${children})
+    set(child_path ${parent_dir}/${child})
+    if(IS_DIRECTORY ${child_path})
+      if(EXISTS ${child_path}/CMakeLists.txt)
+        get_filename_component(DIR_NAME ${child_path} NAME)
+
+        add_subdirectory("${child_path}")
+        list(APPEND SUBPROJECT_LIBS quest_${DIR_NAME})
+        list(APPEND SUBPROJECT_TARGET_SOURCES
+             "$<TARGET_OBJECTS:quest_${DIR_NAME}>")
+
+        # Propagate lists back to parent scope
+        set(SUBPROJECT_LIBS
+            ${SUBPROJECT_LIBS}
+            PARENT_SCOPE)
+        set(SUBPROJECT_TARGET_SOURCES
+            ${SUBPROJECT_TARGET_SOURCES}
+            PARENT_SCOPE)
+      else()
+        # Recurse into subdirectories to find CMakeLists.txt
+        add_subdirectories_recursive(${child_path})
+
+        # Propagate results
+        set(SUBPROJECT_LIBS
+            ${SUBPROJECT_LIBS}
+            PARENT_SCOPE)
+        set(SUBPROJECT_TARGET_SOURCES
+            ${SUBPROJECT_TARGET_SOURCES}
+            PARENT_SCOPE)
+      endif()
+    endif()
+  endforeach()
+endfunction()
+
+add_subdirectories_recursive(${CMAKE_CURRENT_SOURCE_DIR}/quests)
+
+# foreach(DIR IN LISTS SUBDIRS)
+#   if(IS_DIRECTORY ${DIR})
+#     get_filename_component(DIR_NAME ${DIR} NAME)
+#
+#     add_subdirectory("quests/${DIR_NAME}")
+#     list(APPEND SUBPROJECT_LIBS quest_${DIR_NAME})
+#     list(APPEND SUBPROJECT_TARGET_SOURCES "$<TARGET_OBJECTS:quest_${DIR_NAME}>")
+#   endif()
+# endforeach()
 
 message("Subproject Libraries: ${SUBPROJECT_LIBS}")
 message("Subproject Target Sources: ${SUBPROJECT_TARGET_SOURCES}")
