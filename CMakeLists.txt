@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 project(
-  run_all_quest_tests
+  CodeQuest
   VERSION 1.0.0
   LANGUAGES C CXX)
 
@@ -70,29 +70,27 @@ endfunction()
 
 add_subdirectories_recursive(${CMAKE_CURRENT_SOURCE_DIR}/quests)
 
-# foreach(DIR IN LISTS SUBDIRS)
-#   if(IS_DIRECTORY ${DIR})
-#     get_filename_component(DIR_NAME ${DIR} NAME)
+# foreach(DIR IN LISTS SUBDIRS) if(IS_DIRECTORY ${DIR})
+# get_filename_component(DIR_NAME ${DIR} NAME)
 #
-#     add_subdirectory("quests/${DIR_NAME}")
-#     list(APPEND SUBPROJECT_LIBS quest_${DIR_NAME})
-#     list(APPEND SUBPROJECT_TARGET_SOURCES "$<TARGET_OBJECTS:quest_${DIR_NAME}>")
-#   endif()
-# endforeach()
+# add_subdirectory("quests/${DIR_NAME}") list(APPEND SUBPROJECT_LIBS
+# quest_${DIR_NAME}) list(APPEND SUBPROJECT_TARGET_SOURCES
+# "$<TARGET_OBJECTS:quest_${DIR_NAME}>") endif() endforeach()
 
 message("Subproject Libraries: ${SUBPROJECT_LIBS}")
 message("Subproject Target Sources: ${SUBPROJECT_TARGET_SOURCES}")
 
 option(BUILD_TESTS "Build Tests" ON)
 if(BUILD_TESTS)
+  set(TEST_PROJECT_NAME test_${PROJECT_NAME})
   enable_language(CXX)
-  add_executable(${PROJECT_NAME} runners/run_all_tests.cpp)
-  target_link_libraries(${PROJECT_NAME} PRIVATE umbra_test ${SUBPROJECT_LIBS})
-  target_sources(${PROJECT_NAME} PRIVATE ${SUBPROJECT_TARGET_SOURCES})
-  target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
+  add_executable(${TEST_PROJECT_NAME} runners/run_all_tests.cpp)
+  target_link_libraries(${TEST_PROJECT_NAME} PRIVATE umbra_test ${SUBPROJECT_LIBS})
+  target_sources(${TEST_PROJECT_NAME} PRIVATE ${SUBPROJECT_TARGET_SOURCES})
+  target_compile_features(${TEST_PROJECT_NAME} PRIVATE cxx_std_20)
   if(MSVC)
-    target_compile_options(${PROJECT_NAME} PRIVATE /W4 /EHsc)
+    target_compile_options(${TEST_PROJECT_NAME} PRIVATE /W4 /EHsc)
   else()
-    target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic)
+    target_compile_options(${TEST_PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic)
   endif()
 endif()
