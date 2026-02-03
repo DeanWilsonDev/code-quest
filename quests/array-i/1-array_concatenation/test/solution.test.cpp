@@ -2,8 +2,8 @@
 #include <umbra/test_cpp.hpp>
 #include <vector>
 
-DESCRIBE("Array I Tests", {
-  DESCRIBE("Concatenate Array", {
+DESCRIBE("Array I", {
+  DESCRIBE("1. Concatenate Array", {
     TEST("TEST CASE 1", {
       (void)user;
       std::vector<int> nums = {1, 2, 1};
