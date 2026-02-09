@@ -27,7 +27,26 @@ DESCRIBE("Array II", {
         TEST("TEST CASE 3", {
           vector<int> nums = { 2, 2 };
 
-          vector<int> expected = { 1, 2 };
+          vector<int> expected = { 2, 1 };
+          vector<int> result = Solution::findErrorNums(nums);
+
+          ASSERT_EQUAL(expected, result);
+        });
+
+
+        TEST("TEST CASE 4", {
+          vector<int> nums = { 3, 2, 2 };
+
+          vector<int> expected = { 2, 1 };
+          vector<int> result = Solution::findErrorNums(nums);
+
+          ASSERT_EQUAL(expected, result);
+        });
+
+        TEST("TEST CASE 4", {
+          vector<int> nums = { 3, 2, 3, 4, 6, 5 };
+
+          vector<int> expected = { 3, 1 };
           vector<int> result = Solution::findErrorNums(nums);
 
           ASSERT_EQUAL(expected, result);
