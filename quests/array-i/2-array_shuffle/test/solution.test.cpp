@@ -1,5 +1,5 @@
 #include "../src/solution.cpp"
-#include <umbra/test_cpp.hpp>
+#include <umbra/test.hpp>
 
 DESCRIBE("Array I", {
   DESCRIBE("2. Array Shuffle", {

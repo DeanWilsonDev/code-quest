@@ -1,5 +1,5 @@
 #include "../src/solution.cpp"
-#include <umbra/test_cpp.hpp>
+#include <umbra/test.hpp>
 #include <vector>
 
 DESCRIBE("Array I", {
