@@ -12,12 +12,12 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include(FetchContent)
 
-# UmbraTest
+# Cimmerian Test Framework
 FetchContent_Declare(
-  umbra_test
-  GIT_REPOSITORY "https://github.com/UmbraEngine/UmbraTest.git"
+  cimmerian
+  GIT_REPOSITORY "https://github.com/DeanWilsonDev/Cimmerian.git"
   GIT_TAG main)
-FetchContent_MakeAvailable(umbra_test)
+FetchContent_MakeAvailable(cimmerian)
 
 file(
   GLOB SUBDIRS
@@ -85,7 +85,7 @@ if(BUILD_TESTS)
   set(TEST_PROJECT_NAME test_${PROJECT_NAME})
   enable_language(CXX)
   add_executable(${TEST_PROJECT_NAME} runners/run_all_tests.cpp)
-  target_link_libraries(${TEST_PROJECT_NAME} PRIVATE umbra_test ${SUBPROJECT_LIBS})
+  target_link_libraries(${TEST_PROJECT_NAME} PRIVATE cimmerian ${SUBPROJECT_LIBS})
   target_sources(${TEST_PROJECT_NAME} PRIVATE ${SUBPROJECT_TARGET_SOURCES})
   target_compile_features(${TEST_PROJECT_NAME} PRIVATE cxx_std_20)
   if(MSVC)

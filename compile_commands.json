@@ -1,50 +1,146 @@
 [
 {
   "directory": "/Users/deanwilson/development/challenges/quest/build",
-  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/run_all_quest_tests.dir/runners/run_all_tests.cpp.o -c /Users/deanwilson/development/challenges/quest/runners/run_all_tests.cpp",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/include -I/Users/deanwilson/development/challenges/quest/quests/_template/include -I/Users/deanwilson/development/challenges/quest/quests/array-i/1-array_concatenation/include -I/Users/deanwilson/development/challenges/quest/quests/array-i/2-array_shuffle/include -I/Users/deanwilson/development/challenges/quest/quests/array-i/3-array_max_consecutive_ones/include -I/Users/deanwilson/development/challenges/quest/quests/array-ii/1-set-mismatch/include -I/Users/deanwilson/development/challenges/quest/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/test_CodeQuest.dir/runners/run_all_tests.cpp.o -c /Users/deanwilson/development/challenges/quest/runners/run_all_tests.cpp",
   "file": "/Users/deanwilson/development/challenges/quest/runners/run_all_tests.cpp",
-  "output": "CMakeFiles/run_all_quest_tests.dir/runners/run_all_tests.cpp.o"
+  "output": "CMakeFiles/test_CodeQuest.dir/runners/run_all_tests.cpp.o"
 },
 {
-  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
-  "command": "/usr/bin/cc  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/umbra_test.dir/src/test_case.c.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_case.c",
-  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_case.c",
-  "output": "_deps/umbra_test-build/CMakeFiles/umbra_test.dir/src/test_case.c.o"
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-build",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/cimmerian.dir/src/test-group.cpp.o -c /Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/src/test-group.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/src/test-group.cpp",
+  "output": "_deps/cimmerian-build/CMakeFiles/cimmerian.dir/src/test-group.cpp.o"
 },
 {
-  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
-  "command": "/usr/bin/cc  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/umbra_test.dir/src/test_group.c.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_group.c",
-  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_group.c",
-  "output": "_deps/umbra_test-build/CMakeFiles/umbra_test.dir/src/test_group.c.o"
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-build",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/cimmerian.dir/src/test-registry.cpp.o -c /Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/src/test-registry.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/src/test-registry.cpp",
+  "output": "_deps/cimmerian-build/CMakeFiles/cimmerian.dir/src/test-registry.cpp.o"
 },
 {
-  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
-  "command": "/usr/bin/cc  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/umbra_test.dir/src/test_registry.c.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_registry.c",
-  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_registry.c",
-  "output": "_deps/umbra_test-build/CMakeFiles/umbra_test.dir/src/test_registry.c.o"
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-build",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/cimmerian.dir/src/test-runner.cpp.o -c /Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/src/test-runner.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/src/test-runner.cpp",
+  "output": "_deps/cimmerian-build/CMakeFiles/cimmerian.dir/src/test-runner.cpp.o"
 },
 {
-  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
-  "command": "/usr/bin/cc  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/umbra_test.dir/src/test_container.c.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_container.c",
-  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_container.c",
-  "output": "_deps/umbra_test-build/CMakeFiles/umbra_test.dir/src/test_container.c.o"
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-build",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/test_Cimmerian.dir/test/test-main.cpp.o -c /Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/test/test-main.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/test/test-main.cpp",
+  "output": "_deps/cimmerian-build/CMakeFiles/test_Cimmerian.dir/test/test-main.cpp.o"
 },
 {
-  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
-  "command": "/usr/bin/cc  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/umbra_test.dir/src/test_runner.c.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_runner.c",
-  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/src/test_runner.c",
-  "output": "_deps/umbra_test-build/CMakeFiles/umbra_test.dir/src/test_runner.c.o"
+  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-build",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/test_Cimmerian.dir/test/example.test.cpp.o -c /Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/test/example.test.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/cimmerian-src/test/example.test.cpp",
+  "output": "_deps/cimmerian-build/CMakeFiles/test_Cimmerian.dir/test/example.test.cpp.o"
 },
 {
-  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
-  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/test_UmbraTest.dir/test/test_main.cpp.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/test/test_main.cpp",
-  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/test/test_main.cpp",
-  "output": "_deps/umbra_test-build/CMakeFiles/test_UmbraTest.dir/test/test_main.cpp.o"
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/_template",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/_template/include -std=c++20 -arch arm64 -o CMakeFiles/quest__template.dir/src/solution.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/_template/src/solution.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/_template/src/solution.cpp",
+  "output": "quests/_template/CMakeFiles/quest__template.dir/src/solution.cpp.o"
 },
 {
-  "directory": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-build",
-  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/test_UmbraTest.dir/test/example.test.cpp.o -c /Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/test/example.test.cpp",
-  "file": "/Users/deanwilson/development/challenges/quest/build/_deps/umbra_test-src/test/example.test.cpp",
-  "output": "_deps/umbra_test-build/CMakeFiles/test_UmbraTest.dir/test/example.test.cpp.o"
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/_template",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/_template/include -std=c++20 -arch arm64 -o CMakeFiles/quest__template.dir/test/solution.test.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/_template/test/solution.test.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/_template/test/solution.test.cpp",
+  "output": "quests/_template/CMakeFiles/quest__template.dir/test/solution.test.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/_template",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/_template/include -std=c++20 -arch arm64 -o CMakeFiles/run_quest__template.dir/test/test_runner.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/_template/test/test_runner.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/_template/test/test_runner.cpp",
+  "output": "quests/_template/CMakeFiles/run_quest__template.dir/test/test_runner.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-i/1-array_concatenation",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-i/1-array_concatenation/include -std=c++20 -arch arm64 -o CMakeFiles/quest_1-array_concatenation.dir/src/solution.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-i/1-array_concatenation/src/solution.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-i/1-array_concatenation/src/solution.cpp",
+  "output": "quests/array-i/1-array_concatenation/CMakeFiles/quest_1-array_concatenation.dir/src/solution.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-i/1-array_concatenation",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-i/1-array_concatenation/include -std=c++20 -arch arm64 -o CMakeFiles/quest_1-array_concatenation.dir/test/solution.test.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-i/1-array_concatenation/test/solution.test.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-i/1-array_concatenation/test/solution.test.cpp",
+  "output": "quests/array-i/1-array_concatenation/CMakeFiles/quest_1-array_concatenation.dir/test/solution.test.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-i/1-array_concatenation",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-i/1-array_concatenation/include -std=c++20 -arch arm64 -o CMakeFiles/run_quest_1-array_concatenation.dir/test/test_runner.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-i/1-array_concatenation/test/test_runner.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-i/1-array_concatenation/test/test_runner.cpp",
+  "output": "quests/array-i/1-array_concatenation/CMakeFiles/run_quest_1-array_concatenation.dir/test/test_runner.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-i/2-array_shuffle",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-i/2-array_shuffle/include -std=c++20 -arch arm64 -o CMakeFiles/quest_2-array_shuffle.dir/src/solution.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-i/2-array_shuffle/src/solution.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-i/2-array_shuffle/src/solution.cpp",
+  "output": "quests/array-i/2-array_shuffle/CMakeFiles/quest_2-array_shuffle.dir/src/solution.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-i/2-array_shuffle",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-i/2-array_shuffle/include -std=c++20 -arch arm64 -o CMakeFiles/quest_2-array_shuffle.dir/test/solution.test.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-i/2-array_shuffle/test/solution.test.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-i/2-array_shuffle/test/solution.test.cpp",
+  "output": "quests/array-i/2-array_shuffle/CMakeFiles/quest_2-array_shuffle.dir/test/solution.test.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-i/2-array_shuffle",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-i/2-array_shuffle/include -std=c++20 -arch arm64 -o CMakeFiles/run_quest_2-array_shuffle.dir/test/test_runner.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-i/2-array_shuffle/test/test_runner.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-i/2-array_shuffle/test/test_runner.cpp",
+  "output": "quests/array-i/2-array_shuffle/CMakeFiles/run_quest_2-array_shuffle.dir/test/test_runner.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-i/3-array_max_consecutive_ones",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-i/3-array_max_consecutive_ones/include -std=c++20 -arch arm64 -o CMakeFiles/quest_3-array_max_consecutive_ones.dir/src/solution.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-i/3-array_max_consecutive_ones/src/solution.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-i/3-array_max_consecutive_ones/src/solution.cpp",
+  "output": "quests/array-i/3-array_max_consecutive_ones/CMakeFiles/quest_3-array_max_consecutive_ones.dir/src/solution.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-i/3-array_max_consecutive_ones",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-i/3-array_max_consecutive_ones/include -std=c++20 -arch arm64 -o CMakeFiles/quest_3-array_max_consecutive_ones.dir/test/solution.test.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-i/3-array_max_consecutive_ones/test/solution.test.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-i/3-array_max_consecutive_ones/test/solution.test.cpp",
+  "output": "quests/array-i/3-array_max_consecutive_ones/CMakeFiles/quest_3-array_max_consecutive_ones.dir/test/solution.test.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-i/3-array_max_consecutive_ones",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-i/3-array_max_consecutive_ones/include -std=c++20 -arch arm64 -o CMakeFiles/run_quest_3-array_max_consecutive_ones.dir/test/test_runner.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-i/3-array_max_consecutive_ones/test/test_runner.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-i/3-array_max_consecutive_ones/test/test_runner.cpp",
+  "output": "quests/array-i/3-array_max_consecutive_ones/CMakeFiles/run_quest_3-array_max_consecutive_ones.dir/test/test_runner.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-ii/1-set-mismatch",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-ii/1-set-mismatch/include -std=c++20 -arch arm64 -o CMakeFiles/quest_1-set-mismatch.dir/src/solution.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-ii/1-set-mismatch/src/solution.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-ii/1-set-mismatch/src/solution.cpp",
+  "output": "quests/array-ii/1-set-mismatch/CMakeFiles/quest_1-set-mismatch.dir/src/solution.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-ii/1-set-mismatch",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-ii/1-set-mismatch/include -std=c++20 -arch arm64 -o CMakeFiles/quest_1-set-mismatch.dir/test/solution.test.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-ii/1-set-mismatch/test/solution.test.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-ii/1-set-mismatch/test/solution.test.cpp",
+  "output": "quests/array-ii/1-set-mismatch/CMakeFiles/quest_1-set-mismatch.dir/test/solution.test.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-ii/1-set-mismatch",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-ii/1-set-mismatch/include -std=c++20 -arch arm64 -o CMakeFiles/run_quest_1-set-mismatch.dir/test/test_runner.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-ii/1-set-mismatch/test/test_runner.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-ii/1-set-mismatch/test/test_runner.cpp",
+  "output": "quests/array-ii/1-set-mismatch/CMakeFiles/run_quest_1-set-mismatch.dir/test/test_runner.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/include -std=c++20 -arch arm64 -o CMakeFiles/quest_2-how-many-numbers-are-smaller-than-current-number.dir/src/solution.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/src/solution.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/src/solution.cpp",
+  "output": "quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/CMakeFiles/quest_2-how-many-numbers-are-smaller-than-current-number.dir/src/solution.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/include -std=c++20 -arch arm64 -o CMakeFiles/quest_2-how-many-numbers-are-smaller-than-current-number.dir/test/solution.test.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/test/solution.test.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/test/solution.test.cpp",
+  "output": "quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/CMakeFiles/quest_2-how-many-numbers-are-smaller-than-current-number.dir/test/solution.test.cpp.o"
+},
+{
+  "directory": "/Users/deanwilson/development/challenges/quest/build/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number",
+  "command": "/usr/bin/c++  -I/Users/deanwilson/development/challenges/quest/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/include -std=c++20 -arch arm64 -o CMakeFiles/run_quest_2-how-many-numbers-are-smaller-than-current-number.dir/test/test_runner.cpp.o -c /Users/deanwilson/development/challenges/quest/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/test/test_runner.cpp",
+  "file": "/Users/deanwilson/development/challenges/quest/quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/test/test_runner.cpp",
+  "output": "quests/array-ii/2-how-many-numbers-are-smaller-than-current-number/CMakeFiles/run_quest_2-how-many-numbers-are-smaller-than-current-number.dir/test/test_runner.cpp.o"
 }
 ]

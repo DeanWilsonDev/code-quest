@@ -1,5 +1,5 @@
 #include "../src/solution.cpp"
-#include <umbra/test.hpp>
+#include <cimmerian/test.hpp>
 
 DESCRIBE("Template Example Tests", {
   TEST("TEST CASE 1", { ASSERT_EQUAL(1 + 1, 2); });
