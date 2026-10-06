@@ -1,11 +1,16 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.30)
 
 project(
   CodeQuest
   VERSION 1.0.0
   LANGUAGES C CXX)
 
-set(CMAKE_CXX_STANDARD 20)
+if((CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS 14)
+   OR (CMAKE_CXX_COMPILER_ID STREQUAL "Clang" AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS 18))
+  message(FATAL_ERROR "CodeQuest needs GCC 14 or later or Clang 18 or later; found ${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER_VERSION}")
+endif()
+
+set(CMAKE_CXX_STANDARD 26)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -87,7 +92,7 @@ if(BUILD_TESTS)
   add_executable(${TEST_PROJECT_NAME} runners/run_all_tests.cpp)
   target_link_libraries(${TEST_PROJECT_NAME} PRIVATE cimmerian ${SUBPROJECT_LIBS})
   target_sources(${TEST_PROJECT_NAME} PRIVATE ${SUBPROJECT_TARGET_SOURCES})
-  target_compile_features(${TEST_PROJECT_NAME} PRIVATE cxx_std_20)
+  target_compile_features(${TEST_PROJECT_NAME} PRIVATE cxx_std_26)
   if(MSVC)
     target_compile_options(${TEST_PROJECT_NAME} PRIVATE /W4 /EHsc)
   else()

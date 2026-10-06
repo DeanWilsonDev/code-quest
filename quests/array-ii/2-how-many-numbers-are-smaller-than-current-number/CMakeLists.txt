@@ -5,7 +5,7 @@ add_library(${PROJECT_NAME} OBJECT src/solution.cpp test/solution.test.cpp)
 target_link_libraries(${PROJECT_NAME} PUBLIC cimmerian)
 target_include_directories(
   ${PROJECT_NAME} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>)
-target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_20)
+target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_26)
 
 string(TOUPPER ${PROJECT_NAME} PROJECT_NAME_UPPER)
 option(${PROJECT_NAME_UPPER}_BUILD_RUNNER "Build Quest: Array I standalone one"
